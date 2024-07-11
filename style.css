@@ -126,6 +126,24 @@ body {
     color: #5c5f66;
     margin-left: 10px;
   }
+
+@media (max-width: 480px) {
+    .add > input {
+        width: 70%;
+    }
+
+    .add button {
+        width: 30%;
+    }
+
+    .todo-lists p {
+        min-width: 70%;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+}
   
   .todo-lists button:hover {
     background-color: #e8bfde;
