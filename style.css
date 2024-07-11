@@ -1,0 +1,133 @@
+body {
+    background: #f5f5f5;
+    min-height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-text {
+    display: flex;
+    justify-content: center;
+  }
+  
+  span {
+    color: #5c5f66;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .title p {
+    color: #a8a8a8;
+    font-size: 1rem;
+    margin-left: 24px;
+    line-height: 1;
+    margin-bottom: -2px;
+  }
+  
+  .title > img {
+    position: absolute;
+    top: 8px;
+    left: 28px;
+  }
+  
+  .fancy {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .fancy::after {
+    --deco-height: 0.3125em;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: auto 100%;
+    background-repeat: round;
+    background-position: 0em;
+  }
+  
+  .add {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .add > input {
+    height: 45px;
+    width: 450px;
+    font-size: large;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add button {
+    background-color: #5c5f66;
+    font-size: large;
+    text-align: center;
+    border: none;
+    width: 85px;
+    border-radius: 0 5px 5px 0;
+    margin-left: 0.2%;
+    color: #ffffff;
+  }
+  
+  .add button:hover {
+    background-color: #45474d;
+    cursor: pointer;
+  }
+  
+  .todo {
+    border: dotted #dcdcdc 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 50px auto;
+  }
+  
+  .todo-lists, .list {
+    font-family: "Playwrite BE WAL", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  .list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .todo-lists p {
+    border: solid #5c5f66 6px;
+    padding: 5px 15px;
+    min-height: 2px;
+    min-width: 450px;
+    background-color: #fff;
+    color: #5c5f66;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-lists button {
+    font-size: large;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: #f3dde9;
+    color: #5c5f66;
+    margin-left: 10px;
+  }
+  
+  .todo-lists button:hover {
+    background-color: #e8bfde;
+  }
+  
