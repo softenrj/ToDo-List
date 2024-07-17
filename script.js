@@ -2,8 +2,9 @@ var time=document.querySelector(".main-heading h2");
 
 function Time() {
     var dateString = new Date();
-    time.innerHTML=dateString.getDay()+dateString.getMonth()+dateString.getFullYear();
+    time.innerHTML=dateString.getDate()+"/"+dateString.getMonth()+"/"+dateString.getFullYear();
   }
+  Time();
   
   var inputField = document.querySelector(".add-list input");
   var inputVal = inputField.value;
